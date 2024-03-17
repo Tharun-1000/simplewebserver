@@ -54,11 +54,11 @@ httpd.serve_forever()```
 
 ## OUTPUT:
 
-![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/146439be-3661-46f7-96b7-16f020f46199)
+```![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/146439be-3661-46f7-96b7-16f020f46199)
 
 
 
-![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/bfccb0aa-d7a4-4c9d-bab3-cee85c1090c1)
+![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/bfccb0aa-d7a4-4c9d-bab3-cee85c1090c1)```
 
 
 
