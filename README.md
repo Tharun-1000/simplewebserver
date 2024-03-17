@@ -21,50 +21,25 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+
+
+
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-
+<!DOCTYPE html>
 <html>
-	<title>web page </title>
+<head>
+<title>My webserver</title>
+</head>
 <body>
-	<table border="3" cellspacing="10">
-	<caption> Top five Revenue Generating Software Companies </caption>
-	<tr>
-		<th> S.NO </th>
-		<th>Company </th>
-		<th> Revenue </th>
-	</tr>
-	<tr>
-	<td> 1 </td>
-	<td> MICROSOFT </td>
-	<td> 65 Billion </td>
-	</tr>
-	<tr>
-	<td> 2 </td>
-	<td> Oracle </td>
-	<td> 29.6 billion </td>
-	</tr>
-	<tr>
-	<td> 3 </td>
-	<td> IBM </td>
-	<td> 29.1 billion </td>
-	</tr>
-	<tr>
-	<td> 4 </td>
-	<td> SAP </td>
-	<td> 6.4 billion </td>
-	</tr>
-	<tr>
-	<td> 5 </td>
-	<td> Symantec </td>
-	<td> 5.6 billion </td>
-	</tr>
-	</table>
+<h1><u>Languages used in Web Development</u><h1>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Bootstrap</li>
 </body>
 </html>
- 
-
-
 """
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -73,7 +48,7 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',8000)
+server_address = ('',80)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
@@ -81,12 +56,15 @@ httpd.serve_forever()
 
 ## OUTPUT:
 
-![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/b1444e8f-7e60-4d58-8dc2-40ed88f9c5ad)
+![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/146439be-3661-46f7-96b7-16f020f46199)
+
+
+
+![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/bfccb0aa-d7a4-4c9d-bab3-cee85c1090c1)
 
 
 
 
-![image](https://github.com/Tharun-1000/simplewebserver/assets/135952958/771bae11-55e7-4c25-86f4-924183b0494b)
 
 
 ## RESULT:
